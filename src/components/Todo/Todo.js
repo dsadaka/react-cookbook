@@ -71,8 +71,6 @@ class Todo extends Component {
     // Finding the task by id...
     const foundTask = this.state.items.find(task => task.id === id);
 
-    this.removeTask(id)
-
     // Updating the completed status...
     foundTask.completed = true;
 
