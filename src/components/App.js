@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Popup from react-popup;
+import Popup from 'react-popup';
 
 // import Todo from './Todo/Todo';
 // import logo from '../shared/images/logo.svg';
