@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Popup from react-popup;
+
 // import Todo from './Todo/Todo';
 // import logo from '../shared/images/logo.svg';
 // import Home from './Home/Home';
@@ -6,7 +8,8 @@ import React, { Component } from 'react';
 // import Coins from './Coins/Coins'
 // import Notes from './Notes/Notes';
 // import Animation from './Animation/Animation'
-import Numbers from './Numbers/Numbers'
+// import Numbers from './Numbers/Numbers'
+import Person from './Person/Person'
 
 // This is our fake data...
 import { notes1, notes2 } from './Notes/data';
@@ -16,6 +19,7 @@ import Content from '../shared/components/layout/Content';
 import Footer from '../shared/components/layout/Footer';
 
 import './App.css';
+import './Popup.css';
 
 class App extends Component {
     constructor() {
@@ -39,13 +43,15 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <Header title="Understanding Pure Components" />
+                <Header title="Personal Information" />
 
                 <Content>
-                    <Numbers />
+                    <Person />
                 </Content>
 
                 <Footer />
+
+                <Popup />
             </div>
         );
     }
