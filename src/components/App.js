@@ -4,7 +4,9 @@ import React, { Component } from 'react';
 // import Home from './Home/Home';
 // import Timer from './Pomodoro/Timer';
 // import Coins from './Coins/Coins'
-import Notes from './Notes/Notes';
+// import Notes from './Notes/Notes';
+// import Animation from './Animation/Animation'
+import Numbers from './Numbers/Numbers'
 
 // This is our fake data...
 import { notes1, notes2 } from './Notes/data';
@@ -37,10 +39,10 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <Header title="Notes" />
+                <Header title="Understanding Pure Components" />
 
                 <Content>
-                    <Notes notes={this.state.notes} />
+                    <Numbers />
                 </Content>
 
                 <Footer />
