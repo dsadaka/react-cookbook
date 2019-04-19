@@ -7,9 +7,9 @@ import * as serviceWorker from './serviceWorker';
 const unmountButton = document.getElementById('unmount');
 
 function unmount() {
-    ReactDOM.unmountComponentAtNode(document.getElementById('root'));
-    document.getElementById('unmountMessage').style.display = 'block';
-    unmountButton.remove();
+  ReactDOM.unmountComponentAtNode(document.getElementById('root'));
+  document.getElementById('unmountMessage').style.display = 'block';
+  unmountButton.remove();
 }
 
 unmountButton.addEventListener('click', unmount);
